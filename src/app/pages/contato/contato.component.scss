@@ -1,0 +1,108 @@
+@use "../../styles/variables" as var;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+  .form-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+      font-size: 1.0rem;
+      color: var.$ebony-green-color;
+      margin-bottom: 20px;
+    }
+  }
+
+  h1 {
+    font-size: 2.9rem;
+    color: var.$black-blue-color;
+    letter-spacing: 2px;
+
+    span {
+      display: inline-block;
+      transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+        color: var.$dark-blue-color;
+      }
+    }
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .name-email{
+      display: flex;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      label {
+        font-size: 1.0rem;
+        font-weight: 700;
+        color: var.$ebony-green-color;
+      }
+
+      input {
+        padding: 10px;
+        width: 250px;
+        border: 1px solid var.$ebony-green-color;
+        border-radius: 8px;
+        font-size: 1.0rem;
+        color: var.$ebony-green-color;
+        background-color: white;
+        &::placeholder {
+          color: var.$ebony-green-color-variant; 
+        }
+      }
+
+      textarea {
+        max-width: 520px;
+        min-width: 520px;
+        padding: 10px;
+        border: 1px solid var.$ebony-green-color;
+        border-radius: 5px;
+        font-size: 1.0rem;
+        color: var.$ebony-green-color;  
+        background-color: white;
+        &::placeholder {
+          color: var.$ebony-green-color-variant; 
+        }   
+      }
+    }
+  }
+
+  .btn {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: var.$white-green-color;
+  background-color: var.$black-blue-color;
+  border-radius: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  box-shadow: 1px 4px var.$dark-blue-color;
+
+  &:hover {
+    background-color: var.$dark-blue-color;
+    box-shadow: 1px 4px var.$dark-blue-color-variant;
+  }
+  }
+}

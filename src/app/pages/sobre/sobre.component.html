@@ -1,0 +1,26 @@
+<section>
+  <div class="container">
+    <div class="sobre">
+      <div class="subtitle">
+        <h1>
+          <span>S</span><span>o</span><span>b</span><span>r</span><span>e</span><span>&nbsp;</span><span>m</span><span>i</span><span>m</span><span>.</span>
+        </h1>
+      </div>
+      <div class="text">
+        <p>Sou desenvolvedor front-end web e estudante de Ciência da Computação, apaixonado por criar interfaces intuitivas e experiências digitais que conectam criatividade e lógica. Desde o início da minha jornada, encontrei no desenvolvimento front-end a oportunidade de transformar ideias em aplicações modernas e funcionais.</p>
+      </div>
+      <div>
+        <app-button class="btn" text="Projetos" routerLink="/projetos"></app-button>
+      </div>
+
+    </div>
+    <div class="skills">
+      <h1>
+        <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span><span>.</span>
+      </h1>
+      <div class="card-skills">
+        <app-card-skill *ngFor="let skill of skills" [imagemUrl]="skill.imageUrl" [nome]="skill.name"></app-card-skill>
+      </div>
+    </div>
+  </div>
+</section>

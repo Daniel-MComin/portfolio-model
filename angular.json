@@ -29,11 +29,13 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+        "styles": [
+          "src/styles.scss",
+          "src/app/styles/variables.scss"
+        ],
             "scripts": []
           },
           "configurations": {

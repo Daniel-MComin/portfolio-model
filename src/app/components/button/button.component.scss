@@ -1,0 +1,20 @@
+@use '../../styles/variables' as var;
+
+.btn {
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var.$white-green-color;
+  background-color: var.$black-blue-color;
+  border-radius: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  box-shadow: 1px 4px var.$dark-blue-color;
+
+  &:hover {
+    background-color: var.$dark-blue-color;
+    box-shadow: 1px 4px var.$dark-blue-color-variant;
+  }
+}
