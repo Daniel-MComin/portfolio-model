@@ -1,0 +1,64 @@
+@use "../../styles/variables" as var;
+
+.project{
+  padding: 10px;
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    width: 300px;
+    min-height: 200px;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var.$ebony-green-color;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 1px 4px var.$dark-blue-color;
+  
+    &:hover {
+      outline: 2px solid var.$black-blue-color;
+      border: 1px solid var.$black-blue-color;
+      transform: scale(1.1);
+    }
+
+    .project-image{
+      width: 200px;
+      height: 100px;
+    }
+
+    .project-info{
+      padding: 1rem;
+      border-top: 1px solid var.$ebony-green-color;
+
+      .tecnologias{
+        display: flex;
+        gap: 4px;
+
+        .tec-options{
+          color: var.$dark-blue-color;
+        }
+      }
+
+      h2{
+        font-size: 1.2rem;
+        padding: 4px 0px;
+      }
+
+      p{
+        font-size: 0.9rem;
+        padding: 2px 0px;
+
+      }
+      
+
+      a{
+        color: var.$dark-blue-color;
+        font-size: 0.9rem;
+        padding: 2px 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@use "../../styles/variables" as var;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+    p{
+      font-size: 1.0rem;
+      color: var.$ebony-green-color;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+  h1 {
+    font-size: 2.9rem;
+    color: var.$black-blue-color;
+    letter-spacing: 2px;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+        color: var.$dark-blue-color;
+      }
+    }
+  }
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}

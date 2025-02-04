@@ -21,7 +21,7 @@ export class SobreComponent {
     { imageUrl: '../../../assets/figma.svg', name: 'Figma' },
     { imageUrl: '../../../assets/bootstrap.svg', name: 'Boostrap' },
     { imageUrl: '../../../assets/tailwind1.svg', name: 'Tailwind CSS' },
-    { imageUrl: '../../../assets/nodejs.svg', name: 'Node JS' },
+    { imageUrl: '../../../assets/react.svg', name: 'React JS' },
   ];
 
 }
